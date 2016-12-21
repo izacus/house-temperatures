@@ -1,7 +1,8 @@
+import datetime
 import json
 
 import dateutil
-from temps.database import Rooms, SensorData
+from database import Rooms, SensorData, BatteryData
 import arrow
 import subprocess
 
@@ -13,19 +14,28 @@ LIVING_ROOM_SENSOR_ID = 94
 OFFICE_SENSOR_ID = 45
 BEDROOM_SENSOR_ID = 108
 
+last_readouts = {}
+
 
 def read_sensors():
     process = subprocess.Popen(["rtl_433", "-Fjson", "-R03", "-R19", "-q", "-Csi", "-U"], stdout=subprocess.PIPE)
     while True:
         line = process.stdout.readline()
         if line != '':
-            process_sensor_line(line)
+            process_sensor_line(line.decode('utf-8'))
+
+
+def update_battery_status(sensor_id, timestamp, status):
+    existing_status, _ = BatteryData.get_or_create(sensor_id=sensor_id)
+    existing_status.timestamp = timestamp.datetime
+    existing_status.last_seen_status = status
+    existing_status.save()
 
 
 def process_sensor_line(line):
     try:
         sensor_json = json.loads(line)
-    except json.JSONDecodeError:
+    except ValueError:
         return
 
     room = get_room_for_sensor_data(sensor_json)
@@ -33,17 +43,29 @@ def process_sensor_line(line):
         print("Unknown sensor line [%s]" % line)
         return
 
-    # 2016-12-20 21:56:36
+    sensor_id = sensor_json["id"]
     timestamp = arrow.get(sensor_json["time"], "YYYY-MM-DD HH:mm:ss").replace(tzinfo=dateutil.tz.tzutc())
+    battery_status = sensor_json["battery"]
+
+    update_battery_status(sensor_id, timestamp, battery_status)
+
+    # We throttle the readouts to once per minute to save on data
+    last_readout = last_readouts.get(sensor_id)
+
+    if last_readout and (timestamp.datetime - last_readout.timestamp) < datetime.timedelta(minutes=1):
+        print("Skipping readout for updated %s..." % (room, ))
+        return
+
     sensor_data = SensorData(timestamp=timestamp.datetime,
                              temperature=sensor_json["temperature_C"],
                              humidity=sensor_json.get("humidity"),
                              sensor_name=sensor_json["model"],
-                             sensor_id=sensor_json["id"],
+                             sensor_id=sensor_id,
                              channel=sensor_json.get("channel"),
                              room=room.value)
     sensor_data.save()
     print(sensor_data)
+    last_readouts[sensor_id] = sensor_data
 
 
 def get_room_for_sensor_data(sensor_json):
