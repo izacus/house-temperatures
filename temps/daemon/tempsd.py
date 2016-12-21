@@ -1,9 +1,9 @@
 import json
 
 import dateutil
-
 from temps.database import Rooms, SensorData
 import arrow
+import subprocess
 
 OUTDOOR_SENSOR_ID = 5
 OUTDOOR_SENSOR_NAME = "Prologue"
@@ -13,15 +13,21 @@ LIVING_ROOM_SENSOR_ID = 94
 OFFICE_SENSOR_ID = 45
 BEDROOM_SENSOR_ID = 108
 
+
 def read_sensors():
-    with open("test_data.txt") as f:
-        lines = f.readlines()
-        for line in lines:
+    process = subprocess.Popen(["rtl_433", "-Fjson", "-R03", "-R19", "-q", "-Csi", "-U"], stdout=subprocess.PIPE)
+    while True:
+        line = process.stdout.readline()
+        if line != '':
             process_sensor_line(line)
 
 
 def process_sensor_line(line):
-    sensor_json = json.loads(line)
+    try:
+        sensor_json = json.loads(line)
+    except json.JSONDecodeError:
+        return
+
     room = get_room_for_sensor_data(sensor_json)
     if not room:
         print("Unknown sensor line [%s]" % line)
@@ -37,6 +43,7 @@ def process_sensor_line(line):
                              channel=sensor_json.get("channel"),
                              room=room.value)
     sensor_data.save()
+    print(sensor_data)
 
 
 def get_room_for_sensor_data(sensor_json):
