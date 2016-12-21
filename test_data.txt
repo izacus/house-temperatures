@@ -1,0 +1,81 @@
+{"time" : "2016-12-20 21:41:42", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 22.800}
+{"time" : "2016-12-20 21:41:59", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:41:59", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 23.800, "humidity" : 54}
+{"time" : "2016-12-20 21:42:21", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:42:34", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:43:00", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 22.800}
+{"time" : "2016-12-20 21:43:06", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 23.800, "humidity" : 54}
+{"time" : "2016-12-20 21:43:09", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:43:18", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:43:44", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:44:14", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 23.800, "humidity" : 54}
+{"time" : "2016-12-20 21:44:15", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:44:19", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:44:19", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 22.800}
+{"time" : "2016-12-20 21:44:54", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:45:12", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:45:21", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 23.800, "humidity" : 54}
+{"time" : "2016-12-20 21:45:29", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:45:38", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 22.800}
+{"time" : "2016-12-20 21:46:04", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:46:09", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:46:28", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 23.800, "humidity" : 54}
+{"time" : "2016-12-20 21:46:39", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:46:57", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 23.000}
+{"time" : "2016-12-20 21:47:06", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 55}
+{"time" : "2016-12-20 21:47:14", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:47:34", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 23.900, "humidity" : 55}
+{"time" : "2016-12-20 21:47:48", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:48:03", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 55}
+{"time" : "2016-12-20 21:48:16", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 23.200}
+{"time" : "2016-12-20 21:48:24", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:48:41", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.000, "humidity" : 54}
+{"time" : "2016-12-20 21:48:59", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:49:00", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 55}
+{"time" : "2016-12-20 21:49:34", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:49:35", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 23.300}
+{"time" : "2016-12-20 21:49:49", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.100, "humidity" : 54}
+{"time" : "2016-12-20 21:49:57", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.400, "humidity" : 55}
+{"time" : "2016-12-20 21:50:08", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:50:44", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:50:55", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 21:50:56", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:51:19", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:51:51", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 21:51:54", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:52:03", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:52:13", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 23.600}
+{"time" : "2016-12-20 21:52:28", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:52:48", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 21:53:04", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:53:09", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.200, "humidity" : 54}
+{"time" : "2016-12-20 21:53:32", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 23.700}
+{"time" : "2016-12-20 21:53:39", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:53:45", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 21:54:14", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:54:16", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.300, "humidity" : 54}
+{"time" : "2016-12-20 21:54:42", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 21:54:49", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:54:52", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 23.800}
+{"time" : "2016-12-20 21:55:39", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 54}
+{"time" : "2016-12-20 21:55:59", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:56:10", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 23.900}
+{"time" : "2016-12-20 21:56:31", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.300, "humidity" : 54}
+{"time" : "2016-12-20 21:56:34", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:56:36", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 54}
+{"time" : "2016-12-20 21:57:09", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:57:29", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 24.000}
+{"time" : "2016-12-20 21:57:33", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 54}
+{"time" : "2016-12-20 21:57:38", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 21:57:43", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:58:19", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:58:30", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 54}
+{"time" : "2016-12-20 21:58:44", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 21:58:48", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 24.100}
+{"time" : "2016-12-20 21:58:54", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:59:27", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 54}
+{"time" : "2016-12-20 21:59:29", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 21:59:51", "model" : "Nexus Temperature/Humidity", "id" : 94, "battery" : "OK", "channel" : 2, "temperature_C" : 24.400, "humidity" : 54}
+{"time" : "2016-12-20 22:00:03", "model" : "Prologue sensor", "id" : 5, "rid" : 74, "channel" : 1, "battery" : "OK", "button" : 0, "temperature_C" : 0.500, "humidity" : 73}
+{"time" : "2016-12-20 22:00:07", "model" : "Nexus Temperature", "id" : 45, "battery" : "OK", "channel" : 3, "temperature_C" : 24.200}
+{"time" : "2016-12-20 22:00:24", "model" : "Nexus Temperature/Humidity", "id" : 108, "battery" : "OK", "channel" : 1, "temperature_C" : 24.300, "humidity" : 54}
