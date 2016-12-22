@@ -60,7 +60,7 @@ def get_current_status():
             continue
 
         current_entries[PRINTABLE_ROOM_NAMES[room.value]] = {"temperature": entry.temperature, "humidity": entry.humidity,
-                                                             "time": arrow.get(entry.timestamp).format("HH:mm, DD.MM.YYYY")}
+                                                             "time": arrow.get(entry.timestamp).to('local').format("HH:mm, DD.MM.YYYY")}
 
         # Check for battery status
         battery = BatteryData.select().where(BatteryData.sensor_id == entry.sensor_id).order_by(BatteryData.timestamp.desc()).get()
@@ -76,7 +76,7 @@ def get_graphing_data(room, minute_grouping=10, max_age_minutes=2880):
                        .order_by(SensorData.timestamp.desc())
              )
 
-    data = [{"time": arrow.get(entry.timestamp).format("YYYY-MM-DD HH:mm:ss"), "temperature": entry.temperature, "humidity": entry.humidity} for entry in query]
+    data = [{"time": arrow.get(entry.timestamp).to('local').format("YYYY-MM-DD HH:mm:ss"), "temperature": entry.temperature, "humidity": entry.humidity} for entry in query]
     return {"room": PRINTABLE_ROOM_NAMES[room], "room_id": room, "data": data}
 
 db.connect()
