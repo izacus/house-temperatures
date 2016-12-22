@@ -22,7 +22,7 @@ function showCurrentTemperatureData(data) {
     for (var room in data) {
         if (data.hasOwnProperty(room)) {
 
-            html += ' <div class="col-xs-12 col-sm-6 col-md-3"><div class="panel">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-3"><div class="panel">';
             html += '<header><h2>' + room + '</h2></header>';
             html += '<main><h3>';
             html += data[room].temperature + '<sub>&deg;C</sub>';

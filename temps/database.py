@@ -1,4 +1,5 @@
 import datetime
+import time
 from enum import Enum
 
 import arrow
@@ -67,6 +68,16 @@ def get_current_status():
 
     return current_entries
 
+
+def get_graphing_data(room, minute_grouping=10, max_age_minutes=2880):
+    query = (SensorData.select(SensorData.room, SensorData.timestamp, peewee.fn.Avg(SensorData.temperature), peewee.fn.Avg(SensorData.humidity))
+                       .where(SensorData.room == room, SensorData.timestamp > time.time() - (max_age_minutes * 60))
+                       .group_by(peewee.SQL("room, strftime('%%s', timestamp) / (%d * 60)" % (minute_grouping,)))
+                       .order_by(SensorData.timestamp.desc())
+             )
+
+    data = [{"time": entry.timestamp, "temperature": entry.temperature, "humidity": entry.humidity} for entry in query]
+    return data
 
 db.connect()
 db.create_tables([SensorData, BatteryData], safe=True)
