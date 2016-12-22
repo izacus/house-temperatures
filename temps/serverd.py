@@ -14,7 +14,7 @@ def status():
     return jsonify(status_data)
 
 
-@app.route("/graph/<room_number>")
+@app.route("/graph/<int:room_number>")
 def hourly_graph_data(room_number):
     return jsonify(get_graphing_data(room_number))
 

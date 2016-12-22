@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard CSS - Demo</title>
+    <title>House temperatures</title>
     <link rel="stylesheet" href="css/dashboard.min.css">
-    <script type="text/javascript" src="sensors.js"></script>
+    <script type="text/javascript" src="js/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="js/sensors.js"></script>
     <script type="text/javascript">
         (function() {
-            loadData();
+            document.addEventListener('DOMContentLoaded', loadData, false);
         })();
     </script>
   </head>

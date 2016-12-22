@@ -76,8 +76,8 @@ def get_graphing_data(room, minute_grouping=10, max_age_minutes=2880):
                        .order_by(SensorData.timestamp.desc())
              )
 
-    data = [{"time": entry.timestamp, "temperature": entry.temperature, "humidity": entry.humidity} for entry in query]
-    return data
+    data = [{"time": arrow.get(entry.timestamp).format("YYYY-MM-DD HH:mm:ss"), "temperature": entry.temperature, "humidity": entry.humidity} for entry in query]
+    return {"room": PRINTABLE_ROOM_NAMES[room], "room_id": room, "data": data}
 
 db.connect()
 db.create_tables([SensorData, BatteryData], safe=True)
