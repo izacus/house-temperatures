@@ -71,7 +71,8 @@ def get_current_status():
 
 def get_graphing_data(room, minute_grouping=10, max_age_minutes=2880):
     query = (SensorData.select(SensorData.room, SensorData.timestamp, peewee.fn.Avg(SensorData.temperature), peewee.fn.Avg(SensorData.humidity))
-                       .where(SensorData.room == room, SensorData.timestamp > time.time() - (max_age_minutes * 60))
+                       .where(SensorData.room == room,
+                              SensorData.timestamp.between(datetime.datetime.now() - datetime.timedelta(minutes=max_age_minutes), datetime.datetime.now()))
                        .group_by(peewee.SQL("room, strftime('%%s', timestamp) / (%d * 60)" % (minute_grouping,)))
                        .order_by(SensorData.timestamp.desc())
              )
